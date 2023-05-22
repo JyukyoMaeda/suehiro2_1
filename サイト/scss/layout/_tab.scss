@@ -1,68 +1,280 @@
 
 
+
 .l-tabs--area{
-    text-align: center;
-    @media screen and (min-width: 767px){
-        width: 100%;
-        max-width: 1000px;
-        margin: auto;
+
+    // 入間、現地周辺の生活施設Ver
+    &.-p01{
+        // タブ > メニュー
+        .tab-item{
+            position: relative;
+            display: inline-block;
+            width: auto;
+            margin: 0 5px 10px;
+            font-size: 12px;
+            line-height: 2;
+            // color: $tabText;
+            text-align: center;
+            transition: all .3s ease;
+            @include mq(sp){
+                margin: 0 10px 10px;
+                &::after{
+                    content: "";
+                    width: 1px;
+                    height: 60%;
+                    background: black;
+                    position: absolute;
+                    top: 50%;
+                    right: -9px;
+                    transform: rotate(30deg) translateY(-50%);
+                }
+
+            }
+            @include mq(tb){
+                display: block;
+                width: 13%;
+                height: 5%;
+                margin: 0 0 1.2% 0;
+                font-size: 1vw;
+                text-align: left;
+                line-height: 1.5;
+            }
+            &.-last{
+                margin: 0 5px;
+            }
+            &:hover{
+                // border-bottom: 1px solid $tabText-hover;
+            }
+
+        }
+        // タブ > コンテンツ
+        .tab-content {
+            display: none;
+            clear: both;
+            overflow: hidden;
+            z-index: 10;
+            @include mq(sp){
+                margin-top: 10%;
+            }
+            @include mq(tb){
+                float: right;
+                width: 85%;
+                margin-top: -25.1%;
+
+            }
+            .tab-content-img{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        @include mq(sp){
+            text-align: center;
+        }
+        input:checked + .tab-item {
+            // color: $tabText-active;
+            font-weight: bold;
+            transform: scale(1.05);
+            transition: all .3s ease;
+        }
+        #location1:checked ~ #location1-content,
+        #location2:checked ~ #location2-content,
+        #location3:checked ~ #location3-content,
+        #location4:checked ~ #location4-content,
+        #location5:checked ~ #location5-content,
+        #location6:checked ~ #location6-content,
+        #location7:checked ~ #location7-content{
+            display: block !important;
+            animation: fadein 1s forwards;
+        }
     }
-    .tab-item{
-        display: inline-block;
-        width: calc(22% - 10px);
-        margin: 0 5px;
-        font-size: 12px;
-        line-height: 2;
-        color: white;
-        background: #B9B9B9;
+    // 狭山市を飛び出すとさらに楽しいVer
+    &.-p02{
         text-align: center;
-        font-weight: bold;
-        transition: all .3s ease;
-        &:hover{
-            background: #66BBC4;
-            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+        @include mq(tb){
+            width: 100%;
+            margin: auto;
         }
-        @media screen and (min-width: 767px){
-            width: 15%;
+        .tab-item{
+            display: inline-block;
+            width: calc(22% - 10px);
             margin: 0 5px;
-            font-size: 20px;
-            line-height: 1.5;
+            font-size: 12px;
+            line-height: 2;
+            color: white;
+            background: #B9B9B9;
+            text-align: center;
+            font-weight: bold;
+            transition: all .3s ease;
+            &:hover{
+                box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                &.-btn01{
+                    background-color: $tab-item-1;
+                }
+                &.-btn02{
+                    background-color: $tab-item-2;
+                }
+                &.-btn03{
+                    background-color: $tab-item-3;
+                }
+                &.-btn04{
+                    background-color: $tab-item-4;
+                }
+            }
+            @media screen and (min-width: 767px){
+                width: 15%;
+                margin: 0 5px;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+        .tab-content {
+            display: none;
+            padding: 45px 0px 40px;
+            clear: both;
+            overflow: hidden;
+            @include mq(tb){
+                padding: 15vh 0px 15vh;
+            }
+            .tab-content-img{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        #iruma:checked ~ #iruma-content,
+        #tokorozawa:checked ~ #tokorozawa-content,
+        #hannou:checked ~ #hannou-content,
+        #kawagoe:checked ~ #kawagoe-content {
+            display: block !important;
+            // opacity: 1;
+            // transition: all 1s ease;
+        }
+        input:checked + .-btn01 {
+            background-color: $tab-item-1;
+            color: white;
+            text-shadow: 1px 1px 1px $item-hover--bg;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            transition: all .3s ease;
+        }
+        input:checked + .-btn02 {
+            background-color: $tab-item-2;
+            color: white;
+            text-shadow: 1px 1px 1px $item-hover--bg;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            transition: all .3s ease;
+        }
+        input:checked + .-btn03 {
+            background-color: $tab-item-3;
+            color: white;
+            text-shadow: 1px 1px 1px $item-hover--bg;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            transition: all .3s ease;
+        }
+        input:checked + .-btn04 {
+            background-color: $tab-item-4;
+            color: white;
+            text-shadow: 1px 1px 1px $item-hover--bg;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            transition: all .3s ease;
         }
     }
+    // この街の暮らしは家族の宝物になるVer
+    &.-p03{
+        text-align: center;
+        @media screen and (min-width: 767px){
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .tab-item{
+            display: inline-block;
+            // width: calc(22% - 10px);
+            width: 85%;
+            margin: 0 5px 10px;
+            font-size: 12px;
+            line-height: 2;
+            color: white;
+            background: #B9B9B9;
+            text-align: center;
+            font-weight: bold;
+            transition: all .3s ease;
+            &.-last{
+                margin: 0 5px;
+            }
+            &:hover{
+                background: #66BBC4;
+                box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            }
+            @media screen and (min-width: 767px){
+                width: 15%;
+                margin: 0 5px;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+        .tab-content {
+            display: none;
+            padding: 45px 0px 40px;
+            margin: auto 10px;
+            clear: both;
+            overflow: hidden;
+            @media screen and (min-width: 767px){
+                margin-left: 14%;
+                margin-right: -5%;
+                padding: 45px 0px 85px;
+            }
+            .tab-content-img{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        #park:checked ~ #park-content,
+        #ballpark:checked ~ #ballpark-content,
+        #amusement:checked ~ #amusement-content,
+        #museum:checked ~ #museum-content {
+            display: block !important;
+            // opacity: 1;
+            // transition: all 1s ease;
+        }
+        input:checked + .-btn01 {
+            background-color: $tab-item-1;
+            color: white;
+            text-shadow: 1px 1px 1px $item-hover--bg;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            transition: all .3s ease;
+        }
+        input:checked + .-btn02 {
+            background-color: $tab-item-2;
+            color: white;
+            text-shadow: 1px 1px 1px $item-hover--bg;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            transition: all .3s ease;
+        }
+        input:checked + .-btn03 {
+            background-color: $tab-item-3;
+            color: white;
+            text-shadow: 1px 1px 1px $item-hover--bg;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            transition: all .3s ease;
+        }
+        input:checked + .-btn04 {
+            background-color: $tab-item-4;
+            color: white;
+            text-shadow: 1px 1px 1px $item-hover--bg;
+            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            transition: all .3s ease;
+        }
+    }
+
+    // アイコンを消す
     input[name="tab-item"] {
         display: none;
     }
-    .tab-content {
-        display: none;
-        padding: 45px 0px 40px;
-        margin: auto 10px;
-        clear: both;
-        overflow: hidden;
-        @media screen and (min-width: 767px){
-            margin-left: 14%;
-            margin-right: -5%;
-            padding: 45px 0px 85px;
-        }
-        .tab-content-img{
-            img{
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
-    #iruma:checked ~ #iruma-content,
-    #tokorozawa:checked ~ #tokorozawa-content,
-    #hannou:checked ~ #hannou-content,
-    #kawagoe:checked ~ #kawagoe-content {
-        display: block !important;
-        // opacity: 1;
-        // transition: all 1s ease;
-    }
-    input:checked + .tab-item {
-        background-color: #66BBC4;
-        color: white;
-        text-shadow: 1px 1px 1px $item-hover--bg;
-        box-shadow: 1px 1px 4px 0px $item-hover--bg;
-        transition: all .3s ease;
-    }
+
+
 }
