@@ -92,37 +92,45 @@
     // 狭山市を飛び出すとさらに楽しいVer
     &.-p02{
         text-align: center;
+        @include mq(sp){
+            padding-top: 3vh;
+        }
         @include mq(tb){
             width: 100%;
             margin: auto;
         }
         .tab-item{
             display: inline-block;
-            width: calc(22% - 10px);
-            margin: 0 5px;
+            width: calc(49%);
             font-size: 12px;
-            line-height: 2;
-            color: white;
+            // line-height: 2;
             background: #B9B9B9;
             text-align: center;
-            font-weight: bold;
-            transition: all .3s ease;
+            transition: all .5s ease;
+            @include mq(tb){
+                width: calc(22% - 10px);
+                margin: 0 5px;
+
+            }
             &:hover{
-                box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                @include mq(tb){
+                    box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                    opacity: .9;
+                }
                 &.-btn01{
-                    background-color: $tab-item-1;
+                    background-color: $tab-item-1-hov;
                 }
                 &.-btn02{
-                    background-color: $tab-item-2;
+                    background-color: $tab-item-2-hov;
                 }
                 &.-btn03{
-                    background-color: $tab-item-3;
+                    background-color: $tab-item-3-hov;
                 }
                 &.-btn04{
-                    background-color: $tab-item-4;
+                    background-color: $tab-item-4-hov;
                 }
             }
-            @media screen and (min-width: 767px){
+            @include mq(tb){
                 width: 15%;
                 margin: 0 5px;
                 font-size: 20px;
@@ -131,7 +139,7 @@
         }
         .tab-content {
             display: none;
-            padding: 45px 0px 40px;
+            // padding: 45px 0px 40px;
             clear: both;
             overflow: hidden;
             @include mq(tb){
@@ -152,33 +160,25 @@
             // opacity: 1;
             // transition: all 1s ease;
         }
+        input:checked + .tab-item {
+            transition: all .5s ease;
+            @include mq(tb){
+                text-shadow: 1px 1px 1px $item-hover--bg;
+                box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                transform: scale(1.01);
+            }
+        }
         input:checked + .-btn01 {
             background-color: $tab-item-1;
-            color: white;
-            text-shadow: 1px 1px 1px $item-hover--bg;
-            box-shadow: 1px 1px 4px 0px $item-hover--bg;
-            transition: all .3s ease;
         }
         input:checked + .-btn02 {
             background-color: $tab-item-2;
-            color: white;
-            text-shadow: 1px 1px 1px $item-hover--bg;
-            box-shadow: 1px 1px 4px 0px $item-hover--bg;
-            transition: all .3s ease;
         }
         input:checked + .-btn03 {
             background-color: $tab-item-3;
-            color: white;
-            text-shadow: 1px 1px 1px $item-hover--bg;
-            box-shadow: 1px 1px 4px 0px $item-hover--bg;
-            transition: all .3s ease;
         }
         input:checked + .-btn04 {
             background-color: $tab-item-4;
-            color: white;
-            text-shadow: 1px 1px 1px $item-hover--bg;
-            box-shadow: 1px 1px 4px 0px $item-hover--bg;
-            transition: all .3s ease;
         }
     }
     // この街の暮らしは家族の宝物になるVer
