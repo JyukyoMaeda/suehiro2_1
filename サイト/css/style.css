@@ -491,33 +491,34 @@ body {
 .l-flex--area .l-flex--contents.-contact-box {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 95%;
   margin: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 541px) {
   .l-flex--area .l-flex--contents.-contact-box {
     flex-wrap: nowrap;
+    width: 80%;
   }
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem {
   width: 50%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 541px) {
   .l-flex--area .l-flex--contents.-contact-box .flexItem {
     width: 25%;
   }
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(1) .l-linkImg {
-  background: #72A0C0;
+  background: #000000;
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(2) .l-linkImg {
-  background: hwb(205 45% 25%/0.8);
+  background: #1E1E1E;
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(3) .l-linkImg {
-  background: hwb(205 45% 25%/0.5);
+  background: #3C3C3C;
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(4) .l-linkImg {
-  background: hwb(205 45% 25%/0.2);
+  background: #5A5A5A;
 }
 .l-flex--area .l-flex--contents.-tab-box {
   width: 90vw;
@@ -1043,6 +1044,9 @@ body {
   transition-duration: 0.5s;
   overflow: hidden;
 }
+.l-linkImg.-contact-box img {
+  vertical-align: bottom;
+}
 @media screen and (min-width: 541px) {
   .l-linkImg.-contact-box {
     transition: all 0.5s ease-in-out;
@@ -1053,16 +1057,16 @@ body {
   }
 }
 .l-linkImg.-contact-box.-box01 {
-  background: #72A0C0;
+  background: #000000;
 }
 .l-linkImg.-contact-box.-box02 {
-  background: hwb(205 45% 25%/0.8);
+  background: #1E1E1E;
 }
 .l-linkImg.-contact-box.-box03 {
-  background: hwb(205 45% 25%/0.5);
+  background: #3C3C3C;
 }
 .l-linkImg.-contact-box.-box04 {
-  background: hwb(205 45% 25%/0.2);
+  background: #5A5A5A;
 }
 .l-linkImg.-underLine {
   position: relative;
@@ -1146,16 +1150,16 @@ body {
 }
 
 .more-lists .more-list:first-child .l-linkImg.-underLine:hover {
-  background: #72A0C0;
+  background: #000000;
 }
 .more-lists .more-list:nth-child(2) .l-linkImg.-underLine:hover {
-  background: hwb(205 45% 25%/0.8);
+  background: #1E1E1E;
 }
 .more-lists .more-list:nth-child(3) .l-linkImg.-underLine:hover {
-  background: hwb(205 45% 25%/0.5);
+  background: #3C3C3C;
 }
 .more-lists .more-list:nth-child(4) .l-linkImg.-underLine:hover {
-  background: hwb(205 45% 25%/0.2);
+  background: #5A5A5A;
 }
 
 .inline {

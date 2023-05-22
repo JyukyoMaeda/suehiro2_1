@@ -178,14 +178,15 @@
 		&.-contact-box{
 			display: flex;
 			flex-wrap: wrap;
-			width: 100%;
+			width: 95%;
 			margin: auto;
-			@media screen and (min-width: 768px){
+			@include mq(tb){
 				flex-wrap: nowrap;
+				width: 80%;
 			}
 			.flexItem{
 				width: calc(50%);
-				@media screen and (min-width: 768px){
+				@include mq(tb){
 					width: 25%;
 				}
 
