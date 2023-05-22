@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>master </title>
+    <!-- デプロイ前に確認・サンプル -->
+    <meta name="keywords" content="所沢市,西武池袋線,西武新宿線,所沢駅,新所沢,小手指,住協">
+    <meta name="description" content="都心に出やすく自然豊かな「所沢」を住みこなす―。">
+    <link rel="canonical" href="https://www.jyu-g.co.jp/special/kamiarai5_5/">
+    <!--// デプロイ前に確認・サンプル -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/query.colorbox-min.js"></script>
+    <script src="js/slick.min.js"></script> 
+
+    <script src="js/menu.js"></script>
+    <script src="js/pagetop.js"></script> 
+    <!-- <script src="js/main.js"></script>  -->
+
+    <!-- swiper関係 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- //swiper関係 -->
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48905020-1"></script> 
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-48905020-1');
+    </script> 
+    <script type="text/javascript">
+    if(location.protocol == 'http:') {
+    location.replace(location.href.replace(/http:/, 'https:'));
+    }
+    </script>
+
+</head>
+<body class="js_humburgerClose">
+    <div id="all">
+        <!-- ナビゲーション -->
+        <div class="menu_box">
+            <div class="el_humburger"> 
+                    <!--ハンバーガーボタン-->
+                    <div class="el_humburger_wrapper">
+                        <span class="el_humburger_bar top"></span>
+                        <span class="el_humburger_bar middle"></span>
+                        <span class="el_humburger_bar bottom"></span>
+                    </div>
+            </div>
+            <div class="circle"></div>
+            <div class="navi">
+                    <!--ナビゲーション-->
+                    <div class="navi_inner">
+                            <div class="navi_item"><a href="#">トップ</a></div>
+                            <div class="navi_item"><a href="#content1">ランドスケープ</a></div>
+                            <div class="navi_item"><a href="#content2">周辺環境</a></div>
+                            <div class="navi_item"><a href="#content3">街の暮らし</a></div>
+                            <div class="navi_item"><a href="#content4">アクセス</a></div>
+                            <div class="navi_item"><a href="#content5">設備</a></div>
+                    </div>
+                    <ul class="btnArea">
+                            <li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712023867">見学予約</a></li>
+                            <li><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712023867">お問い合わせ</a></li>
+                            <li><a href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">無料会員登録</a></li>
+                            <li><a href="https://www.jyu-g.co.jp/">ホーム</a></li>
+                    </ul>
+            </div>
+            <ul class="navi2">
+                    <li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712023867">見学予約</a></li>
+                    <li><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712023867">資料請求</a></li>
+                    <li><a href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">会員登録</a></li>
+                    <li><a href="https://www.jyu-g.co.jp">ホーム</a></li>
+            </ul>
+        </div>
+        <div class="l-container">
+            <!--
+                【　Header　】ファーストビュー
+            -->
+            <div class="l-header l-contents -img-bg">
+                <div class="imgBox">
+                    <img class="pc" src="images/bg/header.png" alt="GRANCIA 所沢 上新井５丁目 建築条件付土地／全18区画">
+                    <img class="sp" src="images/bg/header_s.jpg" alt="GRANCIA 所沢 上新井５丁目 建築条件付土地／全18区画">
+                </div>
+            </div>
+            <!-- トップコンテンツ -->
+            <div class="l-contents -img">
+                <img class="pc" src="images/bg/top.png" alt="進化し続けるまち、所沢。">
+                <img class="sp" src="images/bg/top_s.jpg" alt="進化し続けるまち、所沢。">
+            </div>
+            <!-- コンテンツ1 -->
+            <div id="content1" class="l-contents -img">
+                <img class="pc" src="images/bg/land.png" alt="「所沢」駅を身近としながらも穏やかな住環境が広がるロケーション">
+                <img class="sp" src="images/bg/land_s.jpg" alt="「所沢」駅を身近としながらも穏やかな住環境が広がるロケーション">
+            </div>
+            <!-- contact*4 -->
+            <div class="l-contents -contactArea -box-type">
+                <div class="l-flex--area">
+                    <div class="l-flex--contents -contact-box">
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box01" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712023867">
+                                <img src="images/btn/contact_box_01.png" alt="お問い合わせ">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box02" href="https://www.jyu-g.co.jp/contents/tour?checkid=712023867">
+                                <img src="images/btn/contact_box_02.png" alt="見学予約">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box03" href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">
+                                <img src="images/btn/contact_box_03.png" alt="会員登録">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box04" href="https://www.jyu-g.co.jp/contents/kantan">
+                                <img src="images/btn/contact_box_04.png" alt="簡単資料請求">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- コンテンツ2 -->
+            <div id="content2" class="l-contents -img">
+                <img class="pc" src="images/bg/location.jpg" alt="都市と自然がバランスがとれた街、所沢">
+                <img class="sp" src="images/bg/location_s.jpg" alt="都市と自然がバランスがとれた街、所沢">
+            </div>
+            <!-- コンテンツ3 -->
+            <div id="content3" class="l-contents -img-bg">
+                <div class="imgBox">
+                    <img class="pc" src="images/bg/tabArea.jpg" alt="この町の暮らしは家族の宝になる">
+                    <img class="sp" src="images/bg/tabArea_s_1.jpg" alt="この町の暮らしは家族の宝になる">
+                </div>
+                <div class="l-contentsBox -tabArea">
+                    <div class="pc">
+                        <div class="l-flex--area">
+                            <div class="l-flex--contents -tab-box">
+                                <div class="flexItem">
+                                    <a class="l-linkImg -contact-box -box01" href="#park-pc">
+                                        <img src="images/btn/park_btn.png" alt="パーク">
+                                    </a>
+                                </div>
+                                <div class="flexItem">
+                                    <a class="l-linkImg -contact-box -box02" href="#ballpark-pc">
+                                        <img src="images/btn/ballPark_btn.png" alt="ボールパーク">
+                                    </a>
+                                </div>
+                                <div class="flexItem">
+                                    <a class="l-linkImg -contact-box -box03" href="#amusement-pc">
+                                        <img src="images/btn/amusement_btn.png" alt="アミューズメント">
+                                    </a>
+                                </div>
+                                <div class="flexItem">
+                                    <a class="l-linkImg -contact-box -box04" href="#museum-pc">
+                                        <img src="images/btn/museum_btn.png" alt="美術館">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sp">
+                        <!-- 4. タブ切り替えエリア -->
+                        <div class="l-tabs--area">
+                            <!-- タブエリア -->
+                            <!--  パーク -->
+                            <input id="park" type="radio" name="tab-item" checked>
+                            <label class="tab-item" for="park">
+                                <img src="images/btn/park_btn.png" alt="park">
+                            </label>
+                            <!-- ボールパーク -->
+                            <input id="ballpark" type="radio" name="tab-item">
+                            <label class="tab-item" for="ballpark">
+                                <img src="images/btn/ballPark_btn.png" alt="ballPark">
+                            </label>
+                            <!-- アミューズメント -->
+                            <input id="amusement" type="radio" name="tab-item">
+                            <label class="tab-item" for="amusement">
+                                <img src="images/btn/amusement_btn.png" alt="amusement">
+                            </label>
+                            <!-- 美術館 -->
+                            <input id="museum" type="radio" name="tab-item">
+                            <label class="tab-item -last" for="museum">
+                                <img src="images/btn/museum_btn.png" alt="museum">
+                            </label>
+
+                            <!-- 表示エリア -->
+                            <!--  パーク -->
+                            <div class="tab-content" id="park-content">
+                                <div class="tab-content-img">
+                                    <img src="images/bg/parkArea-bg_s.jpg" alt="パーク_コンテンツ">
+                                    <!-- リンク -->
+                                    <!-- <div class="l-contentsBox -linkArea -tabArea">
+                                        <a class="l-linkText" href="https://www.parks.or.jp/tokorozawa-kokuu/guide/001/001589.html">
+                                            https://www.parks.or.jp/tokorozawa-kokuu/guide/001/001589.html
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- ボールパーク -->
+                            <div class="tab-content" id="ballpark-content">
+                                <div class="tab-content-img">
+                                    <img class="sp" src="images/bg/ballParkArea-bg_s.jpg" alt="ボールパーク_コンテンツ">
+                                    <!-- リンク -->
+                                    <!-- <div class="l-contentsBox -linkArea -tabArea -p02">
+                                        <a class="l-linkText -p02" href="https://www.seibulions.jp/event/kids/facilities">
+                                            https://www.seibulions.jp/event/kids/facilities
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- アミューズメント -->
+                            <div class="tab-content" id="amusement-content">
+                                <div class="tab-content-img">
+                                    <img class="sp" src="images/bg/amusementArea-bg_s.jpg" alt="アミューズメント_コンテンツ">
+                                    <!-- リンク -->
+                                    <!-- <div class="l-contentsBox -linkArea -tabArea -p03">
+                                        <a class="l-linkText -p02" href="https://www.seibu-leisure.co.jp/amusementpark">
+                                            https://www.seibu-leisure.co.jp/amusementpark
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- 美術館 -->
+                            <div class="tab-content" id="museum-content">
+                                <div class="tab-content-img">
+                                    <img class="sp" src="images/bg/museumArea-bg_s.jpg" alt="美術館_コンテンツ">
+                                    <!-- リンク -->
+                                    <!-- <div class="l-contentsBox -linkArea -tabArea -p04">
+                                        <a class="l-linkText -p02" href="https://tokorozawa-sakuratown.com">
+                                            https://tokorozawa-sakuratown.com
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pc">
+                <!-- 所沢航空記念公園エリア -->
+                <div id="park-pc" class="l-contents -img-bg">
+                    <div class="imgBox">
+                        <img class="pc" src="images/bg/parkArea-bg.png" alt="日本における航空発祥の地 間近で見る飛行機は迫力満点！">
+                        <img class="sp" src="images/bg/parkArea-bg_s.jpg" alt="日本における航空発祥の地 間近で見る飛行機は迫力満点！">
+                    </div>
+                    <!-- <div class="l-contentsBox -linkArea">
+                        <a class="l-linkText" href="https://www.parks.or.jp/tokorozawa-kokuu/guide/001/001589.html">
+                            https://www.parks.or.jp/tokorozawa-kokuu/guide/001/001589.html
+                        </a>
+                    </div> -->
+                </div>
+                <!-- ベルーナドームエリア -->
+                <div id="ballpark-pc" class="l-contents -img-bg">
+                    <div class="imgBox">
+                        <img class="pc" src="images/bg/ballParkArea-bg.png" alt="狭山丘陵の中にあるライオンズの本拠地 全周に壁のないアウトドア感覚のドーム球場！">
+                        <img class="sp" src="images/bg/ballParkArea-bg_s.jpg" alt="狭山丘陵の中にあるライオンズの本拠地 全周に壁のないアウトドア感覚のドーム球場！">
+                    </div>
+                    <!-- <div class="l-contentsBox -linkArea -p02">
+                        <a class="l-linkText -p02" href="https://www.seibulions.jp/event/kids/facilities">
+                            https://www.seibulions.jp/event/kids/facilities
+                        </a>
+                    </div> -->
+                </div>
+                <!-- アミューズメントエリア -->
+                <div id="amusement-pc" class="l-contents -img-bg">
+                    <div class="imgBox">
+                        <img class="pc" src="images/bg/amusementArea-bg.png" alt="タイムスリップ気分を楽しもう 昭和レトロな遊園地にびっくり!">
+                        <img class="sp" src="images/bg/amusementArea-bg_s.jpg" alt="タイムスリップ気分を楽しもう 昭和レトロな遊園地にびっくり!">
+                    </div>
+                    <!-- <div class="l-contentsBox -linkArea -p03">
+                        <a class="l-linkText -p02" href="https://www.seibu-leisure.co.jp/amusementpark">
+                            https://www.seibu-leisure.co.jp/amusementpark
+                        </a>
+                    </div> -->
+                </div>
+                <!-- 美術館エリア -->
+                <div id="museum-pc" class="l-contents -img-bg">
+                    <div class="imgBox">
+                        <img class="pc" src="images/bg/museumArea-bg.png" alt="ところざわサクラタウンのランドマーク ユニークな建築物が美しい。フォトスポット満載の複合型施設">
+                        <img class="sp" src="images/bg/museumArea-bg_s.jpg" alt="ところざわサクラタウンのランドマーク ユニークな建築物が美しい。フォトスポット満載の複合型施設">
+                    </div>
+                    <!-- <div class="l-contentsBox -linkArea -p04">
+                        <a class="l-linkText -p02" href="https://tokorozawa-sakuratown.com">
+                            https://tokorozawa-sakuratown.com
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+            <!-- contact*4 -->
+            <div class="l-contents -contactArea -p02">
+                <div class="l-flex--area">
+                    <div class="l-flex--contents -contact-box">
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box01" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712023867">
+                                <img src="images/btn/contact_box_01.png" alt="お問い合わせ">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box02" href="https://www.jyu-g.co.jp/contents/tour?checkid=712023867">
+                                <img src="images/btn/contact_box_02.png" alt="見学予約">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box03" href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">
+                                <img src="images/btn/contact_box_03.png" alt="会員登録">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box04" href="https://www.jyu-g.co.jp/contents/kantan">
+                                <img src="images/btn/contact_box_04.png" alt="簡単資料請求">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- コンテンツ4 -->
+            <div id="content4" class="l-contents -img">
+                <img class="pc" src="images/bg/access-bg.png" alt="「所沢」駅を身近としながらも穏やかな住環境が広がるロケーション">
+                <img class="sp" src="images/bg/access-bg_s.jpg" alt="「所沢」駅を身近としながらも穏やかな住環境が広がるロケーション">
+            </div>
+            <!-- コンテンツ5 -->
+            <div id="content5" class="l-contents -img">
+                <img class="pc" src="images/bg/equipment-bg.png" alt="暮らしをアップデートする多彩な標準装備">
+                <img class="sp" src="images/bg/equipment-bg_s.jpg" alt="暮らしをアップデートする多彩な標準装備">
+            </div>
+            <!-- contact*4 -->
+            <div class="l-contents -contactArea -box-type">
+                <div class="l-flex--area">
+                    <div class="l-flex--contents -contact-box">
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box01" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712023867">
+                                <img src="images/btn/contact_box_01.png" alt="お問い合わせ">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box02" href="https://www.jyu-g.co.jp/contents/tour?checkid=712023867">
+                                <img src="images/btn/contact_box_02.png" alt="見学予約">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box03" href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">
+                                <img src="images/btn/contact_box_03.png" alt="会員登録">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box04" href="https://www.jyu-g.co.jp/contents/kantan">
+                                <img src="images/btn/contact_box_04.png" alt="簡単資料請求">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+    </div>
+
+    <!-- イベント関係 -->
+    <script>
+            // モーダル関係
+            $(function() {
+                $(".iframe").colorbox({
+                    iframe:true,
+                    width:"80%",
+                    height:"90%",
+                    opacity: 0.7
+                });
+            });
+            // スライダー関係
+            $(function(){
+                $(".slider").slick({
+                    autoplay: true,
+                    prevArrow: '<img src="images/btn/prev-arrow.png" class="slide-arrow prev-arrow">',
+                    nextArrow: '<img src="images/btn/next-arrow.png" class="slide-arrow next-arrow">',
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    responsive: [ // ブレイクポイントごとに設定を変更
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                cssEase: 'linear', // easing効果を指定
+                                // centerMode: false, //要素を中央寄せ
+                            }
+                        }
+                    ]
+                });
+                $('.slider2').slick({
+                    infinite: true, // 画像遅延読み込み
+                    autoplay: true, // 自動再生
+                    autoplaySpeed: 0, // スライドが動くスピード（ミリ秒）
+                    speed: 10500,
+                    cssEase: 'linear',
+                    arrows: false,
+                    dots: false, // カルーセル下のドット（現在の表示箇所を視覚化）
+                    centerMode: true, //要素を中央寄せ
+                    centerPadding:'0px', //両サイドの見えている部分のサイズ
+                    slidesToShow:7, // 一度に見えているスライドの数
+                    slidesToScroll:1, // スライドが切り替わる際の画像数
+                    responsive: [ // ブレイクポイントごとに設定を変更
+                        {
+                            breakpoint: 1980,
+                            settings: {
+                                slidesToShow: 5,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                autoplaySpeed: 0,
+                                arrows :false,
+                                speed: 8500, // fade時の切り替えのスピード
+                                cssEase: 'linear', // easing効果を指定
+                                // centerMode: false, //要素を中央寄せ
+                            }
+                        }
+                    ]
+                });
+            });
+
+
+
+            // システムキッチン用
+            const swiperB = new Swiper('.card-swiper.-sliderItem02', {
+                loop: true,
+                slidesPerView: 1,
+                centeredSlides: true,
+                spaceBetween: 105,
+                autoplay: {
+                    delay: 5000,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    // clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            // ロケーション用
+            const sliderThumbnail  = new Swiper(".thumbnail", {
+                slidesPerView: 6, // サムネイルの枚数
+            });
+            const swiperMain = new Swiper(".main", {
+                loop: true,
+                pagination:{
+                    el:".swiper-pagination",
+                    type:"bullets",
+                    clickable:"true"
+                } ,
+                thumbs: {
+                    swiper: sliderThumbnail,
+                },
+            });
+
+    </script>
+                <!--
+            【　Footer　】
+            物件取り扱い店舗情報
+        -->
+        <!--■■物件ID・電話番号 start■■-->
+        <!-- 
+        　 支店電話番号
+            入間支店　　　0120-38-6651   0120-38-6651
+
+
+            大泉支店　　　0120-07-6566　0120-07-6566
+
+
+            飯能支店　　　0120-74-5900　　0120-74-5900
+
+
+            小手指支店　　0120-29-8815   0120-29-8815
+
+
+            東久留米支店　0120-569-888　　0120-569-888
+
+
+            狭山支店　　　0120-59-3611　0120-59-3611
+
+
+            新所沢支店　　0120-28-7311   0120-28-7311
+
+
+            川越支店　　　0120-38-0041　　0120-38-0041
+
+
+
+            ふじみ野支店　0120-53-2277　　0120-53-2277
+
+
+            朝霞台支店　　0120-64-1200　　0120-64-1200
+
+
+        -->
+        <footer class="l-footer -sayama">
+            <h2 class="l-footer--title">
+                <img src="images/logo/shop/shop_sayama.svg" alt="住協狭山支店">
+            </h2>
+            <div class="l-footer--tel">
+                <div class="pc">
+                    <img src="images/logo/tel/tel-sayama.png" alt="0120-38-6651">
+                </div>
+                <div class="sp">
+                    <a class="" href="tel:0120-38-6651"><img src="images/logo/tel/tel_sayama.png" alt="0120-59-3611"></a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

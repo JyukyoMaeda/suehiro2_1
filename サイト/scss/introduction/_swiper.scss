@@ -1,0 +1,83 @@
+.swiperArea{
+    position: relative;
+    height: auto;
+    .swiper-container{
+
+        &.card-swiper{// カードレイアウト
+            margin-bottom: 80px;
+            &:last-child{
+                margin-bottom: 60px;
+            }
+            &.-sliderItem01{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .card{
+                            width: 219px;
+                            height: auto;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            &.-sliderItem02{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .card{
+                            width: 219px;
+                            height: auto;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            &.-sliderItem03{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        //アイテムの大きさ
+                        .card{
+                            width: 365px;
+                            height: auto;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .card-L{
+                            width: 95%;
+                            max-width: 800px;
+                            height: auto;
+                            // 
+                            margin: auto;
+                            // 
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination {//ページネーションの位置
+            &.sp{
+                bottom: -30px;
+                &.-lastItem{
+                    bottom: -15px;
+                }
+            }
+            &.pc{
+                bottom: -30px;
+                &.-lastItem{
+                    bottom: -15px;
+                }
+            }
+        }
+
+    }
+}
