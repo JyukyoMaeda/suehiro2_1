@@ -133,6 +133,15 @@ body {
   }
 }
 
+.l-mgb_15 {
+  margin-bottom: 10vh !important;
+}
+@media screen and (min-width: 541px) {
+  .l-mgb_15 {
+    margin-bottom: 15vh !important;
+  }
+}
+
 .l-pdt_5 {
   padding-top: 2.5vh !important;
 }

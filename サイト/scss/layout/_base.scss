@@ -64,6 +64,12 @@ body{
 		margin-bottom: 10vh !important;
 	}
 }
+.l-mgb_15{
+	margin-bottom : 10vh !important;
+	@include mq(tb){
+		margin-bottom: 15vh !important;
+	}
+}
 
 // 幅調整用 padding = 要素内の空間
 // 上のみ

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/query.colorbox-min.js"></script>
@@ -27,13 +28,6 @@
 
     <script src="js/menu.js"></script>
     <script src="js/pagetop.js"></script> 
-    <!-- <script src="js/main.js"></script>  -->
-
-    <!-- swiper関係 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- //swiper関係 -->
-
 
     <!-- Global site tag (gtag.js) - Google Analytics --> 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48905020-1"></script> 
@@ -72,7 +66,7 @@
                             <div class="navi_item"><a href="#content2">ランドスペース</a></div>
                             <div class="navi_item"><a href="#content3">設備・仕様</a></div>
                             <div class="navi_item"><a href="#content4">周辺環境</a></div>
-                            <div class="navi_item"><a href="#content5">コンテンツ5</a></div>
+                            <div class="navi_item"><a href="#content5">アクセス</a></div>
                     </div>
                     <ul class="btnArea">
                             <li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712726363">見学予約</a></li>
@@ -142,7 +136,8 @@
                     <img class="sp" src="images/bg/tabContent-title_s.png" alt="ランドスケール 全４棟のオール電化住宅。">
                     <img class="pc" src="images/bg/tabContent-title.png" alt="ランドスケール 全４棟のオール電化住宅。">
                 </div>
-                <div class="l-contentsBox -serifu -landscape">
+                <div class="l-contentsBox -serifu -landscape" data-aos="fade-up"
+                data-aos-duration="500">
                     <img src="images/SVG/serifu-landscape.svg" alt="">
                 </div>
             </div>
@@ -238,7 +233,8 @@
                     <img class="sp" src="images/bg/equipment-top_s.png" alt="設備・仕様について">
                     <img class="pc" src="images/bg/equipment-top.png" alt="設備・仕様について">
                 </div>
-                <div class="l-contentsBox -serifu -equipment">
+                <div class="l-contentsBox -serifu -equipment" data-aos="fade-up"
+                data-aos-duration="500">
                     <img src="images/SVG/serifu-equipment.svg" alt="数々の便利設備で暮らしが豊かに">
                 </div>
             </div>
@@ -299,6 +295,44 @@
                 </div>
             </div>
 
+            <!-- アクセス -->
+            <div id="content5" class="l-contents -img">
+                <img class="sp" src="images/bg/access-bg_s.png" alt="交通について">
+                <img class="pc" src="images/bg/access-bg.png" alt="交通について">
+            </div>
+
+            <!-- contact*4 -->
+            <div class="l-contents -img">
+                <img class="sp" src="images/bg/contact-title_s.png" alt="お問い合わせはコチラ">
+                <img class="pc" src="images/bg/contact-title.png" alt="お問い合わせはコチラ">
+            </div>
+            <div class="l-contents -contactArea -box-type l-mgb_15">
+                <div class="l-flex--area">
+                    <div class="l-flex--contents -contact-box">
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box01" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712023867">
+                                <img src="images/btn/contact_box_01.png" alt="お問い合わせ">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box02" href="https://www.jyu-g.co.jp/contents/tour?checkid=712023867">
+                                <img src="images/btn/contact_box_02.png" alt="見学予約">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box03" href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">
+                                <img src="images/btn/contact_box_03_w.png" alt="会員登録">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box04" href="https://www.jyu-g.co.jp/contents/kantan">
+                                <img src="images/btn/contact_box_04_w.png" alt="簡単資料請求">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -313,94 +347,17 @@
                     opacity: 0.7
                 });
             });
-            // スライダー関係
-            $(function(){
-                $(".slider").slick({
-                    autoplay: true,
-                    prevArrow: '<img src="images/btn/prev-arrow.png" class="slide-arrow prev-arrow">',
-                    nextArrow: '<img src="images/btn/next-arrow.png" class="slide-arrow next-arrow">',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    responsive: [ // ブレイクポイントごとに設定を変更
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                cssEase: 'linear', // easing効果を指定
-                                // centerMode: false, //要素を中央寄せ
-                            }
-                        }
-                    ]
-                });
-                $('.slider2').slick({
-                    infinite: true, // 画像遅延読み込み
-                    autoplay: true, // 自動再生
-                    autoplaySpeed: 0, // スライドが動くスピード（ミリ秒）
-                    speed: 10500,
-                    cssEase: 'linear',
-                    arrows: false,
-                    dots: false, // カルーセル下のドット（現在の表示箇所を視覚化）
-                    centerMode: true, //要素を中央寄せ
-                    centerPadding:'0px', //両サイドの見えている部分のサイズ
-                    slidesToShow:7, // 一度に見えているスライドの数
-                    slidesToScroll:1, // スライドが切り替わる際の画像数
-                    responsive: [ // ブレイクポイントごとに設定を変更
-                        {
-                            breakpoint: 1980,
-                            settings: {
-                                slidesToShow: 5,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1,
-                                autoplaySpeed: 0,
-                                arrows :false,
-                                speed: 8500, // fade時の切り替えのスピード
-                                cssEase: 'linear', // easing効果を指定
-                                // centerMode: false, //要素を中央寄せ
-                            }
-                        }
-                    ]
-                });
-            });
-
-            // パララックス機能
-             elem1Data = {
-                'domObj':$('#Parallax01'),
-                'elemMovePos':0,
-                'offY':$('#Parallax01').offset().top,
-                'offX':$('#Parallax01').offset().left
-            //   },
-            };
-
-            elem1Data.domObj.css('background-position','left -200px');
-            let y = 0;
-            let y2 = 1;
-
-            $(window).on("scroll",function(){
-                y = $(this).scrollTop();
-                if(y > elem1Data.elemMovePos)
-                {
-                    elem1 = ((parseInt(y)-parseInt(elem1Data.elemMovePos))*1.1)-200;
-                    elem1Data.domObj.css('background-position','left ' + elem1 +'px');
-                }else{
-                elem1Data.domObj.css('background-position','left -200px');
-                }
-            });
 
 
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000,
+            once: true,
+        });
     </script>
                 <!--
             【　Footer　】
