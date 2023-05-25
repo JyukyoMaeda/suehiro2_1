@@ -1,22 +1,22 @@
-// // スクロールアニメーション関係
-// var targets = document.querySelectorAll('.js-scroll'); //ターゲット要素
-// //スクロールイベント
-// window.addEventListener('scroll', function () {
-//   var scroll = window.scrollY;
-//   var windowHeight = window.innerHeight;
-//   for (let target of targets) {
-//     var targetPos = target.getBoundingClientRect().top + scroll;
-//     if (scroll > targetPos - windowHeight) { 
-//       target.classList.add('is-animated');
-//     }
-//   }
-// });
+// let elem1Data = {
+//     'domObj':$('#content4'),
+//     'elemMovePos':0,
+//     'offY':$('#content4').offset().top,
+//     'offX':$('#content4').offset().left
+// //   },
+//     };
 
-// スクロールで背景が動く
-$(window).scroll(function(){
-    let height = $(this).scrollTop();
-    /*高さを調節*/
-    let yLine = height - 290;
-    /*parseInt( yLine / 2 )の整数部分(今回なら2)を調節することで、スクロール時の動きを調節。値を小さくすると、大きく動く*/
-    $('.js-move-bg').css('background-position', 'left top ' +parseInt( yLine / 2 ) +'px');
-});
+// elem1Data.domObj.css('background-position','left -200px');
+// let y = 0;
+// let y2 = 1;
+
+// $(window).on("scroll",function(){
+//     y = $(this).scrollTop();
+//     if(y > elem1Data.elemMovePos)
+//     {
+//         elem1 = ((parseInt(y)-parseInt(elem1Data.elemMovePos))*1.1)-200;
+//         elem1Data.domObj.css('background-position','left ' + elem1 +'px');
+//     }else{
+//     elem1Data.domObj.css('background-position','left -200px');
+//     }
+// });

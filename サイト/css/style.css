@@ -268,6 +268,20 @@ body {
   width: 100%;
   height: auto;
 }
+.l-contents.-img-bg .imgBox.-parallax {
+  background: url(../images/bg/location-bg_s.png) no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 541px) {
+  .l-contents.-img-bg .imgBox.-parallax {
+    background: url(../images/bg/location-bg.png) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-attachment: fixed;
+  }
+}
 .l-contents.-img-bg .l-contentsBox {
   width: 100%;
   position: absolute;
@@ -315,6 +329,22 @@ body {
     top: 12%;
     left: 26%;
     width: 15%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-c-location {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 88%;
+}
+@media screen and (min-width: 541px) {
+  .l-contents.-img-bg .l-contentsBox.-c-location {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .l-contents.-img-bg .l-contentsBox.-c-location {
+    width: 80%;
   }
 }
 .l-flex--area {
@@ -515,7 +545,7 @@ body {
 .l-flex--area .l-flex--contents.-contact-box {
   display: flex;
   flex-wrap: wrap;
-  width: 95%;
+  width: 88%;
   margin: auto;
 }
 @media screen and (min-width: 541px) {

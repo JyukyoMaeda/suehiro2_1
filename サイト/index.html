@@ -71,7 +71,7 @@
                             <div class="navi_item"><a href="#content1">太陽光発電・蓄電池の導入効果とメリット</a></div>
                             <div class="navi_item"><a href="#content2">ランドスペース</a></div>
                             <div class="navi_item"><a href="#content3">設備・仕様</a></div>
-                            <div class="navi_item"><a href="#content4">コンテンツ4</a></div>
+                            <div class="navi_item"><a href="#content4">周辺環境</a></div>
                             <div class="navi_item"><a href="#content5">コンテンツ5</a></div>
                     </div>
                     <ul class="btnArea">
@@ -233,7 +233,7 @@
             </div>
 
             <!-- 設備・仕様 -->
-            <div class="l-contents -img-bg">
+            <div id="content3" class="l-contents -img-bg">
                 <div class="imgBox">
                     <img class="sp" src="images/bg/equipment-top_s.png" alt="設備・仕様について">
                     <img class="pc" src="images/bg/equipment-top.png" alt="設備・仕様について">
@@ -287,7 +287,17 @@
                 </div>
             </div>
 
-
+            <!-- 周辺環境 -->
+            <div id="content4" class="l-contents -img-bg">
+                <div class="imgBox -parallax">
+                    <img class="sp" src="images/bg/location-bg-c_s.png" alt="周辺環境について">
+                    <img class="pc" src="images/bg/location-bg-c.png" alt="周辺環境について">
+                </div>
+                <div class="l-contentsBox -c-location">
+                    <img class="sp" src="images/item/location-box_s.png" alt="">
+                    <img class="pc" src="images/item/location-box.png" alt="">
+                </div>
+            </div>
 
         </div>
     </div>
@@ -366,41 +376,30 @@
                 });
             });
 
+            // パララックス機能
+             elem1Data = {
+                'domObj':$('#Parallax01'),
+                'elemMovePos':0,
+                'offY':$('#Parallax01').offset().top,
+                'offX':$('#Parallax01').offset().left
+            //   },
+            };
 
+            elem1Data.domObj.css('background-position','left -200px');
+            let y = 0;
+            let y2 = 1;
 
-            // システムキッチン用
-            const swiperB = new Swiper('.card-swiper.-sliderItem02', {
-                loop: true,
-                slidesPerView: 1,
-                centeredSlides: true,
-                spaceBetween: 105,
-                autoplay: {
-                    delay: 5000,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    // clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+            $(window).on("scroll",function(){
+                y = $(this).scrollTop();
+                if(y > elem1Data.elemMovePos)
+                {
+                    elem1 = ((parseInt(y)-parseInt(elem1Data.elemMovePos))*1.1)-200;
+                    elem1Data.domObj.css('background-position','left ' + elem1 +'px');
+                }else{
+                elem1Data.domObj.css('background-position','left -200px');
+                }
             });
-            // ロケーション用
-            const sliderThumbnail  = new Swiper(".thumbnail", {
-                slidesPerView: 6, // サムネイルの枚数
-            });
-            const swiperMain = new Swiper(".main", {
-                loop: true,
-                pagination:{
-                    el:".swiper-pagination",
-                    type:"bullets",
-                    clickable:"true"
-                } ,
-                thumbs: {
-                    swiper: sliderThumbnail,
-                },
-            });
+
 
     </script>
                 <!--
@@ -408,39 +407,18 @@
             物件取り扱い店舗情報
         -->
         <!--■■物件ID・電話番号 start■■-->
-        <!-- 
+        <!--
         　 支店電話番号
             入間支店　　　0120-38-6651   0120-38-6651
-
-
             大泉支店　　　0120-07-6566　0120-07-6566
-
-
             飯能支店　　　0120-74-5900　　0120-74-5900
-
-
             小手指支店　　0120-29-8815   0120-29-8815
-
-
             東久留米支店　0120-569-888　　0120-569-888
-
-
             狭山支店　　　0120-59-3611　0120-59-3611
-
-
             新所沢支店　　0120-28-7311   0120-28-7311
-
-
             川越支店　　　0120-38-0041　　0120-38-0041
-
-
-
             ふじみ野支店　0120-53-2277　　0120-53-2277
-
-
             朝霞台支店　　0120-64-1200　　0120-64-1200
-
-
         -->
         <footer class="l-footer -fuzimino">
             <h2 class="l-footer--title">

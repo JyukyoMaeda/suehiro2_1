@@ -10,6 +10,18 @@
 		.imgBox{// 背景画像
 			width: 100%;
 			height: auto;
+			&.-parallax{
+				background: url(../images/bg/location-bg_s.png) no-repeat;
+				background-size: cover;
+				background-position: 0 0;
+				background-attachment: fixed;
+				@include mq(tb){
+					background: url(../images/bg/location-bg.png) no-repeat;
+					background-size: cover;
+					background-position: 0 0;
+					background-attachment: fixed;
+				}
+			}
 		}
 		.l-contentsBox{// コンテンツ要素
 			width: 100%;
@@ -70,6 +82,18 @@
 						left: 26%;
 						width: 15%;
 					}
+				}
+			}
+			&.-c-location{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 88%;
+				@include mq(tb){
+					width: 80%;
+				}
+				@include mq(pc){
+					width: 80%;
 				}
 			}
 		}
