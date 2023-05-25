@@ -157,6 +157,7 @@
         #hannou:checked ~ #hannou-content,
         #kawagoe:checked ~ #kawagoe-content {
             display: block !important;
+            animation: fadein 2s forwards;
             // opacity: 1;
             // transition: all 1s ease;
         }

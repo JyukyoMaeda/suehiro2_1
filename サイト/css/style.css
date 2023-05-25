@@ -1539,6 +1539,7 @@ body {
 .l-tabs--area.-p02 #hannou:checked ~ #hannou-content,
 .l-tabs--area.-p02 #kawagoe:checked ~ #kawagoe-content {
   display: block !important;
+  animation: fadein 2s forwards;
 }
 .l-tabs--area.-p02 input:checked + .tab-item {
   transition: all 0.5s ease;
