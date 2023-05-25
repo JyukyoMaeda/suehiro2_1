@@ -305,6 +305,18 @@ body {
     width: 15%;
   }
 }
+.l-contents.-img-bg .l-contentsBox.-serifu.-equipment {
+  top: 5.5%;
+  left: 30%;
+  width: 37%;
+}
+@media screen and (min-width: 541px) {
+  .l-contents.-img-bg .l-contentsBox.-serifu.-equipment {
+    top: 12%;
+    left: 26%;
+    width: 15%;
+  }
+}
 .l-flex--area {
   height: 100%;
 }
