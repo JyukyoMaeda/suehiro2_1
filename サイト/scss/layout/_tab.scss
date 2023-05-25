@@ -143,7 +143,7 @@
             clear: both;
             overflow: hidden;
             @include mq(tb){
-                padding: 15vh 0px 15vh;
+                padding: 15vh 0px 0vh;
             }
             .tab-content-img{
                 img{

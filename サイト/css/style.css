@@ -293,6 +293,18 @@ body {
     margin: auto;
   }
 }
+.l-contents.-img-bg .l-contentsBox.-serifu.-landscape {
+  top: 70.5%;
+  left: 24%;
+  width: 37%;
+}
+@media screen and (min-width: 541px) {
+  .l-contents.-img-bg .l-contentsBox.-serifu.-landscape {
+    top: 44%;
+    left: 26.5%;
+    width: 15%;
+  }
+}
 .l-flex--area {
   height: 100%;
 }
@@ -1464,7 +1476,7 @@ body {
 }
 @media screen and (min-width: 541px) {
   .l-tabs--area.-p02 .tab-content {
-    padding: 15vh 0px 15vh;
+    padding: 15vh 0px 0vh;
   }
 }
 .l-tabs--area.-p02 .tab-content .tab-content-img img {

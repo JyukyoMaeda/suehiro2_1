@@ -50,6 +50,19 @@
 
 				}
 			}
+			&.-serifu{
+				&.-landscape{
+					top: 70.5%;
+					left: 24%;
+					width: 37%;
+					@include mq(tb){
+						top: 44%;
+						left: 26.5%;
+						width: 15%;
+					}
+				}
+
+			}
 		}
 	}
 	// 基本的にSliderは、「Slick or Swiper」を使用すること
