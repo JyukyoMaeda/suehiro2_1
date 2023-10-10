@@ -28,6 +28,14 @@ body{
 	animation: fadein 1s forwards;
 }
 
+img{
+	pointer-events: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+	vertical-align: bottom;
+}
+
 
 // 幅調整用 margin = 要素外の空間
 // 上のみ

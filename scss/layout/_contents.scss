@@ -96,6 +96,121 @@
 					width: 80%;
 				}
 			}
+			&.-text{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&.-tabBtn{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			// タブ内 > パース（スマホのみ）
+			&.-sp-pars01{
+				@include mq(sp){
+					top: 28%;
+					left: 58%;
+					transform: translate(-50%, -50%);
+					width: 75%;
+					filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.37));
+					z-index: 10;
+				}
+			}
+			&.-sp-pars02{
+				@include mq(sp){
+					top: 27%;
+    				left: 57%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+					filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.37));
+					z-index: 10;
+				}
+			}
+			&.-sp-pars03{
+				@include mq(sp){
+					top: 27.5%;
+					left: 57%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+					filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.37));
+					z-index: 10;
+				}
+			}
+			&.-sp-pars04{
+				@include mq(sp){
+					top: 24%;
+					left: 64%;
+					transform: translate(-50%, -50%);
+					width: 59%;
+					filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.37));
+					z-index: 10;
+				}
+			}
+			// タブ内 > 外観写真（PCのみ）
+			&.-g-sliderArea{
+				@include mq(tb){
+					top: 37%;
+					left: 87.5%;
+					transform: translate(-50%, -50%);
+					width: 31%;
+				}
+				.l-slider{
+					border: 10px solid white;
+					filter: drop-shadow(1px 1px 15px #80808067);
+				}
+			}
+			// タブ内 > 内観写真（スマホ・PC）
+			&.-n-sliderArea{
+				top: 45%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 90%;
+				@include mq(tb){
+					top: 36%;
+					left: 40%;
+					transform: translate(-50%, -50%);
+					width: 50%;
+				}
+				@include mq(tb-pc1000){
+					top: 33%;
+				}
+				@include mq(tb-pc1300){
+					top: 32%;
+				}
+				@include mq(tb-pc1600){
+					top: 30%;
+				}
+				@include mq(tb-pc1850){
+					top: 29%;
+				}
+				&.-goutou_v02{
+					@include mq(sp){
+						top: 43.5%;
+					}
+				}
+				&.-goutou_v03{
+					@include mq(sp){
+						top: 39%;
+					}
+				}
+				.swiper-slider{
+					// border: 10px solid white;
+					filter: drop-shadow(1px 1px 15px #80808067);
+				}
+			}
+			&.-shadowPic{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.199);
+				
+				&:hover{
+
+				}
+			}
 		}
 	}
 	// 基本的にSliderは、「Slick or Swiper」を使用すること
@@ -106,4 +221,3 @@
 		}
 	}
 }
-

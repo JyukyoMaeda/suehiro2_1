@@ -44,6 +44,24 @@
         }
     </script>
 
+    
+    <!-- swiper関係 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- //swiper関係 -->
+
+    <!-- Adobi Font -->
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'mvu7twk',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
 </head>
 <body class="js_humburgerClose">
     <div id="all">
@@ -147,50 +165,765 @@
                 <!--  1号棟4LDK -->
                 <input id="iruma" type="radio" name="tab-item" checked>
                 <label class="tab-item -btn01" for="iruma">
-                    <img src="images/item/tab-item01-c.png" alt="">
+                    <div class="l-contents -img-bg" style="overflow: hidden; border: 3px solid white;">
+                        <div class="imgBox">
+                            <img class="" src="images/btn/tab_01_b.jpg" alt="1号棟4LDK" style="transition: all .5s;">
+                        </div>
+                        <div class="l-contentsBox -tabBtn">
+                            <img src="images/btn/tab_clear.png" alt="">
+                        </div>
+                        <div class="l-contentsBox -text">
+                            <p class="l-text -sizeLL -family01 -white -center" style="transition: all .5s;">1号棟<br><span class="l-text -sizeL">4LDK</span></p>
+                        </div>
+                    </div>
                 </label>
                 <!-- 2号棟3LDK -->
                 <input id="tokorozawa" type="radio" name="tab-item">
                 <label class="tab-item -btn02" for="tokorozawa">
-                    <img src="images/item/tab-item02-c.png" alt="">
+                    <div class="l-contents -img-bg" style="overflow: hidden; border: 3px solid white;">
+                        <div class="imgBox">
+                            <img class="" src="images/btn/tab_02_b.jpg" alt="2号棟3LDK" style="transition: all .5s;">
+                        </div>
+                        <div class="l-contentsBox -tabBtn">
+                            <img src="images/btn/tab_clear.png" alt="">
+                        </div>
+                        <div class="l-contentsBox -text">
+                            <p class="l-text -sizeLL -family01 -white -center" style="transition: all .5s;">2号棟<br><span class="l-text -sizeL">3LDK</span></p>
+                        </div>
+                    </div>
                 </label>
                 <!-- 3号棟3LDK -->
                 <input id="hannou" type="radio" name="tab-item">
                 <label class="tab-item -btn03" for="hannou">
-                    <img src="images/item/tab-item03-c.png" alt="">
+                    <div class="l-contents -img-bg" style="overflow: hidden; border: 3px solid white;">
+                        <div class="imgBox">
+                            <img class="" src="images/btn/tab_03_b.jpg" alt="3号棟3LDK" style="transition: all .5s;">
+                        </div>
+                        <div class="l-contentsBox -tabBtn">
+                            <img src="images/btn/tab_clear.png" alt="">
+                        </div>
+                        <div class="l-contentsBox -text">
+                            <p class="l-text -sizeLL -family01 -white -center" style="transition: all .5s;">3号棟<br><span class="l-text -sizeL">3LDK</span></p>
+                        </div>
+                    </div>
                 </label>
                 <!-- 4号棟3LDK+s -->
                 <input id="kawagoe" type="radio" name="tab-item">
                 <label class="tab-item -btn04" for="kawagoe">
-                    <img src="images/item/tab-item04-c.png" alt="">
+                    <div class="l-contents -img-bg" style="overflow: hidden; border: 3px solid white;">
+                        <div class="imgBox">
+                            <img class="" src="images/btn/tab_04_b.jpg" alt="4号棟3LDK+S" style="transition: all .5s;">
+                        </div>
+                        <div class="l-contentsBox -tabBtn">
+                            <img src="images/btn/tab_clear.png" alt="">
+                        </div>
+                        <div class="l-contentsBox -text">
+                            <p class="l-text -sizeLL -family01 -white -center" style="transition: all .5s;">4号棟<br><span class="l-text -sizeL">3LDK+S</span></p>
+                        </div>
+                    </div>
                 </label>
                 <!-- 表示エリア -->
                 <!--  1号棟4LDK -->
                 <div class="tab-content" id="iruma-content">
-                    <div class="tab-content-img">
-                        <img class="sp" src="images/item/tab-item01-contents_s.png" alt="1号棟4LDK">
-                        <img class="pc" src="images/item/tab-item01-contents.png" alt="1号棟4LDK">
+                    <div class="l-contents -img-bg">
+                        <div class="imgBox">
+                            <img class="sp" src="images/item/tab-item01-contents_s.png" alt="1号棟4LDK">
+                            <img class="pc" src="images/item/tab-item01-contents.png" alt="1号棟4LDK">
+                        </div>
+                        <!-- パース / スマホのみ -->
+                        <div class="l-contentsBox -sp-pars01">
+                            <img src="images/pic/p-1goutou.png" alt="1号棟_完成予想図">
+                        </div>
+                        <!-- 外観 -->
+                        <div class="l-contentsBox -g-sliderArea">
+                            <div class="l-slider">
+                                <img class="pc" src="images/pic/1goutou/g1.jpg" alt="外観写真 1枚目"/>
+                            </div>
+                        </div>
+                        <!-- 内観 -->
+                        <div class="l-contentsBox -n-sliderArea">
+                            <!-- スライダー-->
+                            <div class="swiper-container slider slider01 swiper-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n2.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n3.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n4.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n5.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n6.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n7.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n8.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n9.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n10.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n11.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n12.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n13.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n14.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n15.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/1goutou/n16.jpg" alt=""></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <!-- サムネイル -->
+                            <div class="pc swiper-container slider-thumbnail slider-thumbnail01">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n1.jpg" alt="内観写真 1枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n2.jpg" alt="内観写真 2枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n3.jpg" alt="内観写真 3枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n4.jpg" alt="内観写真 4枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n5.jpg" alt="内観写真 5枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n6.jpg" alt="内観写真 6枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n7.jpg" alt="内観写真 7枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n8.jpg" alt="内観写真 8枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n9.jpg" alt="内観写真 9枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n10.jpg" alt="内観写真 10枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n11.jpg" alt="内観写真 11枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n12.jpg" alt="内観写真 12枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n13.jpg" alt="内観写真 13枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n14.jpg" alt="内観写真 14枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n15.jpg" alt="内観写真 15枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/1goutou/n16.jpg" alt="内観写真 16枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- 2号棟3LDK -->
                 <div class="tab-content" id="tokorozawa-content">
-                    <div class="tab-content-img">
-                        <img class="sp" src="images/item/tab-item02-contents_s.png" alt="2号棟3LDK">
-                        <img class="pc" src="images/item/tab-item02-contents.png" alt="2号棟3LDK">
+                    <div class="l-contents -img-bg">
+                        <div class="imgBox">
+                            <img class="sp" src="images/item/tab-item02-contents_s.png" alt="2号棟3LDK">
+                            <img class="pc" src="images/item/tab-item02-contents.png" alt="2号棟3LDK">
+                        </div>
+                        <!-- パース（スマホのみ） -->
+                        <div class="l-contentsBox -sp-pars02">
+                            <img src="images/pic/p-2gouotu.png" alt="2号棟_完成予想図">
+                        </div>
+                        <!-- 外観（PCのみ） -->
+                        <div class="l-contentsBox -g-sliderArea">
+                            <div class="l-slider">
+                                <img src="images/pic/2goutou/g1.jpg" alt="外観写真 1枚目"/>
+                            </div>
+                        </div>
+                        <!-- 内観（スマホ・PC） -->
+                        <div class="l-contentsBox -n-sliderArea -goutou_v02">
+                            <!-- スライダー-->
+                            <div class="swiper-container slider slider02 swiper-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n2.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n3.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n4.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n5.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n6.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n7.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n8.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n9.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n16.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n10.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n11.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n12.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n13.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/2goutou/n14.jpg" alt=""></div>
+                                    <!-- <div class="swiper-slide"><img src="images/pic/2goutou/n15.jpg" alt=""></div> -->
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <!-- サムネイル -->
+                            <div class="pc swiper-container slider-thumbnail slider-thumbnail02">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n1.jpg" alt="内観写真 1枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n2.jpg" alt="内観写真 2枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n3.jpg" alt="内観写真 3枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n4.jpg" alt="内観写真 4枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n5.jpg" alt="内観写真 5枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n6.jpg" alt="内観写真 6枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n7.jpg" alt="内観写真 7枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n8.jpg" alt="内観写真 8枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n9.jpg" alt="内観写真 9枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n16.jpg" alt="内観写真 15枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n10.jpg" alt="内観写真 10枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n11.jpg" alt="内観写真 11枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n12.jpg" alt="内観写真 12枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n13.jpg" alt="内観写真 13枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n14.jpg" alt="内観写真 14枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/2goutou/n15.jpg" alt="内観写真 15枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- 3号棟3LDK -->
                 <div class="tab-content" id="hannou-content">
-                    <div class="tab-content-img">
-                        <img class="sp" src="images/item/tab-item03-contents_s.png" alt="3号棟3LDK">
-                        <img class="pc" src="images/item/tab-item03-contents.png" alt="3号棟3LDK">
+                    <div class="l-contents -img-bg">
+                        <div class="imgBox">
+                            <img class="sp" src="images/item/tab-item03-contents_s.png" alt="3号棟3LDK">
+                            <img class="pc" src="images/item/tab-item03-contents.png" alt="3号棟3LDK">
+                        </div>
+                        <!-- パース（スマホのみ） -->
+                        <div class="l-contentsBox -sp-pars03">
+                            <img src="images/pic/p-3goutou.png" alt="3号棟_完成予想図">
+                        </div>
+                        <!-- 外観（PCのみ） -->
+                        <div class="l-contentsBox -g-sliderArea">
+                            <div class="l-slider">
+                                <img src="images/pic/3goutou/g1.jpg" alt="外観写真 1枚目"/>
+                            </div>
+                        </div>
+                        <!-- 内観（スマホ・PC） -->
+                        <div class="l-contentsBox -n-sliderArea -goutou_v02">
+                            <!-- スライダー-->
+                            <div class="swiper-container slider slider03 swiper-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n2.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n3.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n4.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n5.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n6.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n7.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n8.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n9.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n10.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n11.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n12.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n13.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n14.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/3goutou/n15.jpg" alt=""></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <!-- サムネイル -->
+                            <div class="pc swiper-container slider-thumbnail slider-thumbnail03">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n1.jpg" alt="内観写真 1枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n2.jpg" alt="内観写真 2枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n3.jpg" alt="内観写真 3枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n4.jpg" alt="内観写真 4枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n5.jpg" alt="内観写真 5枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n6.jpg" alt="内観写真 6枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n7.jpg" alt="内観写真 7枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n8.jpg" alt="内観写真 8枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n9.jpg" alt="内観写真 9枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n10.jpg" alt="内観写真 10枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n11.jpg" alt="内観写真 11枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n12.jpg" alt="内観写真 12枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n13.jpg" alt="内観写真 13枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n14.jpg" alt="内観写真 14枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/3goutou/n15.jpg" alt="内観写真 15枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- 4号棟3LDK+s -->
                 <div class="tab-content" id="kawagoe-content">
-                    <div class="tab-content-img">
-                        <img class="sp" src="images/item/tab-item04-contents_s.png" alt="4号棟3LDK+s">
-                        <img class="pc" src="images/item/tab-item04-contents.png" alt="4号棟3LDK+s">
+                    <div class="l-contents -img-bg">
+                        <div class="imgBox">
+                            <img class="sp" src="images/item/tab-item04-contents_s.png" alt="4号棟3LDK+s">
+                            <img class="pc" src="images/item/tab-item04-contents.png" alt="4号棟3LDK+s">
+                        </div>
+                        <!-- パース（スマホのみ） -->
+                        <div class="l-contentsBox -sp-pars04">
+                            <img src="images/pic/p-4goutou.png" alt="4号棟_完成予想図">
+                        </div>
+                        <!-- 外観（PCのみ） -->
+                        <div class="l-contentsBox -g-sliderArea">
+                            <div class="l-slider">
+                                <img class="" src="images/pic/4goutou/g1.jpg" alt="外観写真 1枚目"/>
+                            </div>
+                        </div>
+                        <!-- 内観（スマホ・PC） -->
+                        <div class="l-contentsBox -n-sliderArea -goutou_v03">
+                            <!-- スライダー-->
+                            <div class="swiper-container slider slider04 swiper-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n2.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n3.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n4.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n5.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n6.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n7.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n8.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n9.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n14.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n10.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n11.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n12.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n13.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/pic/4goutou/n15.jpg" alt=""></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <!-- サムネイル -->
+                            <div class="pc swiper-container slider-thumbnail slider-thumbnail04">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n1.jpg" alt="内観写真 1枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n2.jpg" alt="内観写真 2枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n3.jpg" alt="内観写真 3枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n4.jpg" alt="内観写真 4枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n5.jpg" alt="内観写真 5枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n6.jpg" alt="内観写真 6枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n7.jpg" alt="内観写真 7枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n8.jpg" alt="内観写真 8枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n9.jpg" alt="内観写真 9枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n14.jpg" alt="内観写真 14枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n10.jpg" alt="内観写真 10枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n11.jpg" alt="内観写真 11枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n12.jpg" alt="内観写真 12枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n13.jpg" alt="内観写真 13枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="l-contents -img-bg" style="overflow: hidden;">
+                                            <div class="imgBox">
+                                                <img src="images/pic/4goutou/n15.jpg" alt="内観写真 15枚目">
+                                            </div>
+                                            <div class="l-contentsBox -shadowPic"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -338,7 +1071,6 @@
         </div>
     </div>
     <div class="gaiyo_wrap">
-        <!-- <div class="gaiyo_link"> <a class="iframe cboxElement" href="https://www.jyu-g.co.jp/contents/detail/712720325?preview=1"><span>新築戸建1号棟</span>物件概要はこちら ＞</a> </div> -->
         <div class="gaiyo_link"><a class="iframe cboxElement" href="https://www.jyu-g.co.jp/contents/detail/712726363">物件概要はこちら ＞</a></div>
     </div>
 
@@ -353,16 +1085,110 @@
                     opacity: 0.7
                 });
             });
+            
+            // スライダー関係(slick)
+            // 外観
+            $(".g-slider").slick({
+                fade: true,
+                prevArrow: false,
+                nextArrow: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [ // ブレイクポイントごとに設定を変更
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            cssEase: 'linear', // easing効果を指定
+                        }
+                    }
+                ]
+            });
+
+
+
+            // スライダー関係（swiper）
+            // サムネイルスライダー用
+            var sThum = new Swiper('.slider-thumbnail01', {
+                loop: true,
+                slidesPerView: 5,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+            var slider = new Swiper('.slider01', {
+                loop: true,
+                effect: "fade",
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                thumbs: {
+                    swiper: sThum
+                }
+            });
+
+            var sThum = new Swiper('.slider-thumbnail02', {
+                loop: true,
+                slidesPerView: 5,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+            var slider = new Swiper('.slider02', {
+                loop: true,
+                effect: "fade",
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                thumbs: {
+                    swiper: sThum
+                }
+            });
+
+            var sThum = new Swiper('.slider-thumbnail03', {
+                loop: true,
+                slidesPerView: 5,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+            var slider = new Swiper('.slider03', {
+                loop: true,
+                effect: "fade",
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                thumbs: {
+                    swiper: sThum
+                }
+            });
+
+            var sThum = new Swiper('.slider-thumbnail04', {
+                loop: true,
+                slidesPerView: 5,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+            var slider = new Swiper('.slider04', {
+                loop: true,
+                effect: "fade",
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                thumbs: {
+                    swiper: sThum
+                }
+            });
+
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            easing: 'ease-out-back',
-            duration: 2000,
-            once: true,
-        });
-    </script>
-                <!--
+
+    <!--
             【　Footer　】
             物件取り扱い店舗情報
         -->

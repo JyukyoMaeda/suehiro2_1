@@ -115,7 +115,20 @@
             &:hover{
                 @include mq(tb){
                     box-shadow: 1px 1px 4px 0px $item-hover--bg;
-                    opacity: .9;
+                    opacity: .8;
+                    .imgBox{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                    .l-contentsBox{
+                        &.-text{
+                            p{
+                                transform: scale(1.05);
+                            }
+                            
+                        }
+                    }
                 }
                 &.-btn01{
                     background-color: $tab-item-1-hov;
